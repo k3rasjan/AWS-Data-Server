@@ -1,0 +1,13 @@
+{
+    "database": {
+        "host": "", 
+        "port": 0,
+        "user": "",
+        "password": "",
+        "database": ""
+    },
+    "elastic": {
+        "endpoint": "",
+        "api_key": ""
+    }
+}
