@@ -8,4 +8,4 @@
 4. Run `pip install tortoise-orm[asyncmy]`
 5. Create a mysql database 
 6. Fill the `config.json` file with required information
-7. Run python `main.py`
+7. Run `python main.py`
