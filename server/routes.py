@@ -25,6 +25,9 @@ async def add_creds(request):
     
     if not await Companies.filter(id=company_id).exists():
         return web.Response(text="Company not found", status=404)
+    
+    if await AWSCredentials.filter(access_key=access_key).exists():
+        return web.Response(text="Credentials already exist", status=400)
 
     await AWSCredentials.create(
         access_key=access_key,
